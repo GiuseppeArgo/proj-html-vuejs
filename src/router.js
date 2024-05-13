@@ -10,9 +10,6 @@ export const router = createRouter({
             name: "home",
             component: HomePage
         },
-<<<<<<< HEAD
-
-=======
         {
             path: "/about",
             name: "about",
@@ -23,6 +20,5 @@ export const router = createRouter({
             name: "contacts",
             component: Contacts
         }
->>>>>>> ea52652ef3fc12558faec4ee50b1555217d33efc
     ]
 });
