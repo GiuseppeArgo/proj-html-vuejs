@@ -20,34 +20,19 @@ export default {
                     listItem: "Instructors Training"
                 }
             ],
-            details: [
-                {
-                    icon:"",
-                    listItem:"50 North Main Street,New York, NY 98765"
-                },
-                {
-                    icon:"",
-                    listItem:"Toll Free: 1-800-555-555"
-                },
-                {
-                    icon:"",
-                    listItem:"info@your-domain.com"
-                },
-                {
-                    icon:"",
-                    listItem:"Mon to Sat: 8 am – 5 pm"
-                }
-            ] 
         }
     }
 }
 </script>
 
 <template>
-    <footer class="d-flex">
-        <div class="d-flex ms_container">
+    <footer class="d-flex flex-column align-items-center">
+        
+        <!-- upper footer -->
+        
+        <div class="ms_upper-footer d-flex ms_container">
             <div class="ms_col">
-                <img src="https://avada.website/driving/wp-content/uploads/sites/114/2019/02/avada-drivers-logo-1x.png" alt="">
+                <img class="logo" src="https://avada.website/driving/wp-content/uploads/sites/114/2019/02/avada-drivers-logo-1x.png" alt="">
                 <p>Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass first time.</p>
                 <a class="ms_about" href="#">MORE ABOUT US</a>
             </div>
@@ -62,9 +47,10 @@ export default {
             <div class="ms_col">
                 <h3>Contact Details</h3>
                 <ul>
-                    <li v-for="detail in details">
-                        <i :class="'fa-regular' + detail.icon"></i> {{ detail.listItem }}
-                    </li>
+                    <li><i class="fa-solid fa-house-chimney"></i> 50 North Main Street, <br><span>New York, NY 98765</span></li>
+                    <li><i class="fa-solid fa-phone"></i> Toll Free: 1-800-555-555</li>
+                    <li><i class="fa-regular fa-envelope"></i> info@your-domain.com</li>
+                    <li><i class="fa-solid fa-arrow-turn-up"></i> Mon to Sat: 8 am – 5 pm</li>
                 </ul>
             </div>
             <div class="ms_col">
@@ -73,6 +59,21 @@ export default {
                 <a class="ms_book" href="#">BOOK NOW</a>
             </div>
         </div>
+        
+        <!-- lower footer -->
+        <div class="ms_lower-footer d-flex justify-content-center align-items-center">
+            <div class="ms_container d-flex justify-content-between align-items-center">
+                <p>© Copyright 2012 - 2024 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>WordPress</span></p>
+
+                <ul class="d-flex">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    
     </footer>
 </template>
 
@@ -87,89 +88,131 @@ export default {
         background-image: url(https://avada.website/driving/wp-content/uploads/sites/114/2019/01/footer-background-color.jpg);
         background-position: center;
         background-size: cover;
-        height: 500px;
+        min-height: 500px;
         justify-content: center;
         font-size: 1.1rem;
         color: #7799ad;
         
         .ms_container {
-            width: 80%;
+            width: 70%;
         }
-
-        a {
-            text-decoration: none;
-        }
-
-        li {
-            list-style: none;
-            margin-top: 20px;
-
-            .green_icon {
-            color: #7abc64;
-            font-size: 0.9rem;
-            margin-right: 5px;
-            }
+        
+        .ms_upper-footer {
 
             a {
-            text-decoration: none;
-            color: #7799ad;
+                text-decoration: none;
+            }
 
-                &:hover {
-                    color: #7abc64;
+            li {
+                list-style: none;
+                margin-top: 20px;
 
-                    .green_icon{
-                        color: white;
+                i {
+                    color: white;
+                    margin-right: 10px;
+                    font-size: .9rem;
+                }
+
+                .green_icon {
+                color: #7abc64;
+                font-size: 0.9rem;
+                margin-right: 5px;
+                }
+
+                span {
+                    padding-left: 35px;
+                }
+                
+                a {
+                text-decoration: none;
+                color: #7799ad;
+
+                    &:hover {
+                        color: #7abc64;
+
+                        .green_icon{
+                            color: white;
+                        }
                     }
                 }
             }
-        }
 
-        .ms_col {
-            width: 25%;
-            margin: 100px 20px;
+            .ms_col {
+                width: 25%;
+                margin: 100px 30px;
+
+                p {
+                    margin: 30px 0;
+                    line-height: 30px;
+                }
+
+                .ms_about {
+                    padding: 10px 15px;
+                    border: 3px solid #929aa3;
+                    border-radius: 50px;
+                    color: #929aa3;
+                    font-size: 1rem;
+
+                    &:hover {
+                        border-color: #7abc64;
+                        color: #7abc64;
+                    }
+                }
+
+                .ms_book {
+                    padding: 10px 25px;
+                    border-radius: 50px;
+                    background-color: #7abc64;
+                    color: white;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: #64a64e;
+                    }
+                    
+                }
+
+                .drive {
+                    width: 80%;
+                    display: block;
+                    margin: 30px 0;
+                }
+
+
+            }
+
+            h3 {
+                color: white;
+            }
+        }
+        
+
+        .ms_lower-footer {
+            background-color: #333333;
+            width: 100%;
+            height: 120px;
 
             p {
-                margin: 30px 0;
-                line-height: 30px;
-            }
+                font-size: .9rem;
+                margin-left: 30px;
 
-            .ms_about {
-                padding: 10px 15px;
-                border: 2px solid #7799ad;
-                border-radius: 50px;
-                color: #7799ad;
-                font-size: 1rem;
-
-                &:hover {
-                    border-color: #7abc64;
-                    color: #7abc64;
+                span {
+                    color: #64a64e;
                 }
             }
 
-            .ms_book {
-                padding: 10px 25px;
-                border-radius: 50px;
-                background-color: #7abc64;
-                color: white;
-                font-size: 1rem;
-
-                &:hover {
-                    background-color: #64a64e;
-                }
+            ul {
+                margin-right: 100px;
                 
+                li {
+                    list-style: none;
+                    margin-left: 20px;
+                    
+                    a {
+                        color: inherit;
+                    }
+                }
             }
-
-            .drive {
-                width: 70%;
-                display: block;
-                margin: 30px 0;
-            }
-
-
-        }
-
-        h3 {
-            color: white;
         }
     }
 
