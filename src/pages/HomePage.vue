@@ -36,7 +36,9 @@ export default {
     <section class="rate">
         <div class="container">
             <div class="row">
-                <div class="col"></div>
+                <div class="col-4 border"></div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
             </div>
         </div>
     </section>
@@ -53,6 +55,6 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
 
-    border: 2px solid black;
+    // border: 2px solid black;
 }
 </style>

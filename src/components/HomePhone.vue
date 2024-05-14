@@ -39,9 +39,10 @@ export default {
     flex-wrap: nowrap;
 
     padding: 0 100px;
-    border: 3px solid red;
     color: $primary-color;
-
+    
+    // border: 3px solid red;
+    
     .left-col {
         padding-left: 80px;
 

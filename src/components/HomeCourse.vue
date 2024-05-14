@@ -28,7 +28,7 @@ export default {
 
 <template>
     <section class="course">
-        <div class="container border">
+        <div class="container">
             <div class="row">
                 <div class="col-2 course-card">
 
@@ -54,7 +54,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-1 ml-3"></div> <!-- Da mettere a posto -->
-                <div v-for="item in itemArray" class="col-2 border">
+                <div v-for="item in itemArray" class="col-2">
                     <div class="thumb-card pt-5">
                         <img :src="getImage(item.img)" alt="...">
                         <div class="card-body pt-4">
@@ -158,10 +158,10 @@ export default {
         align-items: center;
 
         background-color: transparent;
-        min-width: 100%;
-
+        min-width: 200px;
+        overflow: hidden;
         img {
-            width: 200px;
+            width: 180px;
             aspect-ratio: 1;
             max-width: 200px;
 
