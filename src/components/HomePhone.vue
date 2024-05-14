@@ -12,7 +12,7 @@ export default {
                     <h2>Start Learning To Drive Today</h2>
                     <h3>Give us a call to schedule your first driving lesson</h3>
                 </div>
-                <div class="col-4 right-col">
+                <div class="col-4 right-col text-center">
                     <h2>
                         <i class="fa-solid fa-phone"></i> 1-800-555-555
                     </h2>
@@ -38,9 +38,13 @@ export default {
     align-items: center;
     flex-wrap: nowrap;
 
+    padding: 0 100px;
+    border: 3px solid red;
     color: $primary-color;
 
     .left-col {
+        padding-left: 80px;
+
         min-width: 800px;
 
         * {
@@ -58,8 +62,8 @@ export default {
 
     .right-col {
         min-width: 200px;
-        display: flex;
-        justify-content: flex-end;
+        padding-right: 80px;
+
     }
 }
 </style>

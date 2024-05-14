@@ -95,7 +95,7 @@ export default {
     }
 
     // debug
-    border: 1px solid black;
+    // border: 1px solid black;
 
     .form-card {
         position: relative;
