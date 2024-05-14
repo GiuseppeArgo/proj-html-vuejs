@@ -158,8 +158,9 @@ export default {
         align-items: center;
 
         background-color: transparent;
-        min-width: 200px;
+        min-width: 180px;
         overflow: hidden;
+
         img {
             width: 180px;
             aspect-ratio: 1;
