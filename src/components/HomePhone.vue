@@ -28,13 +28,15 @@ export default {
 
 .ms_phone {
     background-image: url(https://avada.website/driving/wp-content/uploads/sites/114/2019/01/horizontal-cta-background.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
+    max-height: 300px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 
     color: $primary-color;
 
@@ -56,6 +58,8 @@ export default {
 
     .right-col {
         min-width: 200px;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 </style>
