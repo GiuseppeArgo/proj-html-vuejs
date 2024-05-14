@@ -1,8 +1,12 @@
 <script>
-
-export default{
+import AppHeader from "./components/AppHeader.vue";
+export default {
+  components: {
+    AppHeader,
+  },
   data() {
-    return{
+    return {
+
       menu: [
         {
           name: "home",
@@ -23,16 +27,13 @@ export default{
 </script>
 
 <template>
-    <ul>
-      <li v-for="item in menu">
-        <router-link :to="{name:item.name}">{{ item.title }}</router-link>
-      </li>
-    </ul>
-    <router-view></router-view>
+  <div>
+    <AppHeader :menu="menu" />
+  </div>
+  <router-view></router-view>
 </template>
 
 <style>
-
 div.fixed {
   position: fixed;
   bottom: 0;
@@ -40,5 +41,4 @@ div.fixed {
   width: 300px;
   border: 3px solid #73AD21;
 }
-
 </style>
