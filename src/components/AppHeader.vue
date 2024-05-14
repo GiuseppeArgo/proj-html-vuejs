@@ -17,7 +17,7 @@ export default {
                 </div>
             </section>
         </header>
-        <header class="menu-bar">
+        <header class="menu-bar p-3">
             <section class="container d-flex justify-content-between align-items-center">
                 <div><img src="../assets/img/logo.webp" alt="logo" /> </div>
                 <ul class="d-flex justify-content-between align-items-center ">
@@ -32,6 +32,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 .ms_navbar {
     position: absolute;
     top: 0;
@@ -39,10 +41,11 @@ export default {
     width: 100%;
     z-index: 100;
 }
+
 .header-top {
     background-color: #333333;
     height: 45px;
-    color: #436EA3;
+    color: $text-color;
     font-size: 0.8rem;
 }
 
@@ -50,7 +53,7 @@ export default {
     background-color: rgb(51, 51, 51, 0.5);
 
     a {
-        color: white;
+        color: $primary-color;
         text-decoration: none;
         padding: 7px 15px;
         font-weight: bolder;
@@ -58,7 +61,7 @@ export default {
     }
 
     .router-link-active {
-        color: green;
+        color: $text-green;
         text-decoration: underline 3px solid;
     }
 }
@@ -67,7 +70,7 @@ export default {
 
 ul {
     list-style-type: none;
-    color: white;
+    color: $primary-color;
     border: none;
 }
 </style>

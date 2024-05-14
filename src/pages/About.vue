@@ -6,15 +6,54 @@ export default {
 
 <template>
     <section class="my-title">
-        <h2>About</h2>
+        <div class="container ">
+            <h2>About</h2>
+        </div>
+    </section>
+    <section class="d-flex container">
+        <div>
+            <h2 class="pt-5">Mission Statement</h2>
+            <h4 class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id
+                cursus. Aliquam
+                maximus turpis in vehicula semper.</h4>
+
+            <p class="pt-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id
+                cursus.</p>
+            <img src="../assets/img/labels.png" alt="Labels" />
+        </div>
+        <div>
+            <img src="../assets/img/about-page-mike-intro-fade.png" alt="Mike" />
+        </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 .my-title {
+
     background-image: url(../assets/img/default-ptb-retina.jpg);
     background-size: cover;
     height: 300px;
-    color: white;
+    color: $primary-color;
+}
+
+.my-title h2 {
+    position: absolute;
+    top: 225px;
+    font-size: 3rem;
+}
+
+
+h4 {
+    color: #A6B8C2;
+}
+
+p {
+    color: #A6B8C2;
+}
+
+img {
+    width: 80%;
 }
 </style>
