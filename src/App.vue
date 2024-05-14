@@ -1,8 +1,11 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppFooter from './components/AppFooter.vue';
+
 export default {
   components: {
     AppHeader,
+    AppFooter
   },
   data() {
     return {
@@ -31,6 +34,8 @@ export default {
     <AppHeader :menu="menu" />
   </div>
   <router-view></router-view>
+
+  <AppFooter />
 </template>
 
 <style>

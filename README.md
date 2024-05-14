@@ -1,4 +1,4 @@
-# Team 10: Avada Drivig
+# Team 10: Avada Driving
 
 ### Suddivisione Layout:
 > - [ ] **Home Page**: *Ryam Peguero*
