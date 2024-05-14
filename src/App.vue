@@ -1,11 +1,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from './components/AppFooter.vue';
+import AppNewsletter from "./components/AppNewsletter.vue";
 
 export default {
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    AppNewsletter
   },
   data() {
     return {
@@ -34,16 +36,10 @@ export default {
     <AppHeader :menu="menu" />
   </div>
   <router-view></router-view>
-
+  <AppNewsletter />
   <AppFooter />
 </template>
 
 <style>
-div.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  border: 3px solid #73AD21;
-}
+
 </style>
