@@ -94,7 +94,7 @@ export default {
         color: #7799ad;
         
         .ms_container {
-            width: 70%;
+            width: 80%;
         }
         
         .ms_upper-footer {
