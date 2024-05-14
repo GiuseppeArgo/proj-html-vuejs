@@ -1,6 +1,11 @@
 <script>
+import AppFooter from './components/AppFooter.vue';
+
 
 export default{
+  components: {
+    AppFooter
+  },
   data() {
     return{
       menu: [
@@ -23,12 +28,14 @@ export default{
 </script>
 
 <template>
+
     <ul>
       <li v-for="item in menu">
         <router-link :to="{name:item.name}">{{ item.title }}</router-link>
       </li>
     </ul>
     <router-view></router-view>
+  <AppFooter />
 </template>
 
 <style>
