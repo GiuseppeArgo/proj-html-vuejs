@@ -1,4 +1,6 @@
 <script>
+import { store } from "./store.js";
+
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from './components/AppFooter.vue';
 import AppNewsletter from "./components/AppNewsletter.vue";
@@ -13,7 +15,8 @@ export default {
   },
   data() {
     return {
-
+      store,
+      
       menu: [
         {
           name: "home",
@@ -27,7 +30,7 @@ export default {
           name: "contacts",
           title: "CONTACTS"
         }
-      ]
+      ],
     }
   }
 }
@@ -37,7 +40,7 @@ export default {
   <div>
     <AppHeader :menu="menu" />
   </div>
-  <router-view></router-view>
+  <router-view ></router-view>
 </template>
 
 <style>

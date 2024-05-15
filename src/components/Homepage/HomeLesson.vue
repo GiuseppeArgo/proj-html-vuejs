@@ -66,7 +66,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
+@use "../../style/partials/variables" as *;
 
 .ms_lesson {
     position: relative;

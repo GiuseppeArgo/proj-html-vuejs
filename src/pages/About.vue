@@ -1,34 +1,14 @@
 <script>
+import { store } from "../store.js";
 import AboutCard from '../components/AboutCard.vue';
+
 export default {
     components: {
         AboutCard,
     },
     data() {
         return {
-            team: [
-                {
-                    name: "Mike Hart",
-                    job: "Principle Instructor",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                    location: ["San Diego", "Los Angeles", "Fresno", "San Francisco"],
-                    img: "mike-hart-about-page-400x504.jpg"
-                },
-                {
-                    name: "John Smith",
-                    job: "Course Instructor",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                    location: ["New York", "New Jersey", "Washington D.C", "Virginia"],
-                    img: "john-smith-about-page-400x504.jpg"
-                },
-                {
-                    name: "Angela Hart",
-                    job: "Driving Instructor",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                    location: ["New York", "South Carolina", "Washington D.C", "Florida"],
-                    img: "angela-hart-about-page-400x504.jpg"
-                },
-            ]
+            team: store.team
         };
     }
 }
