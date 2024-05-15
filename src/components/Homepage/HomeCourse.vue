@@ -70,7 +70,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
+@use "../../style/partials/variables" as *;
 
 .course {
     background-image: url(https://avada.website/driving/wp-content/uploads/sites/114/2019/01/promise-background.jpg);

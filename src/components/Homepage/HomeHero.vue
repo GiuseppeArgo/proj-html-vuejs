@@ -19,7 +19,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
+@use "../../style/partials/variables" as *;
 
 .ms_hero {
     background-image: url(https://avada.website/driving/wp-content/uploads/sites/114/2019/01/homepage-hero-background.jpg);

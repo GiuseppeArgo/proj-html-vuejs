@@ -1,10 +1,12 @@
 <script>
+import { store } from "../store.js";
 import AboutCard from '../components/AboutCard.vue';
 import AboutFaq from '../components/AboutFaq.vue';
 import AppFooter from '../components/AppFooter.vue';
 import AppNewsletter from "../components/AppNewsletter.vue";
 import AppCarousel from "../components/AppCarousel.vue";
-import HomePhone from "../components/HomePhone.vue";
+import HomePhone from "../components/Homepage/HomePhone.vue";
+
 export default {
     components: {
         AboutCard,
@@ -16,55 +18,7 @@ export default {
     },
     data() {
         return {
-            team: [
-                {
-                    name: "Mike Hart",
-                    job: "Principle Instructor",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                    location: ["San Diego", "Los Angeles", "Fresno", "San Francisco"],
-                    img: "mike-hart-about-page-400x504.jpg"
-                },
-                {
-                    name: "John Smith",
-                    job: "Course Instructor",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                    location: ["New York", "New Jersey", "Washington D.C", "Virginia"],
-                    img: "john-smith-about-page-400x504.jpg"
-                },
-                {
-                    name: "Angela Hart",
-                    job: "Driving Instructor",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                    location: ["New York", "South Carolina", "Washington D.C", "Florida"],
-                    img: "angela-hart-about-page-400x504.jpg"
-                },
-            ],
-            faqs: [
-                {
-                    question: "High Rate of Success",
-                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                },
-                {
-                    question: "Zero Accident Rate",
-                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                },
-                {
-                    question: "We're Never Late",
-                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                },
-                {
-                    question: "Price Promise",
-                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                },
-                {
-                    question: "True Professionals",
-                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                },
-                {
-                    question: "We Work Around You",
-                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
-                },
-            ]
+            team: store.team
         };
     }
 }
