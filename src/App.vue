@@ -24,6 +24,10 @@ export default {
           title: "ABOUT US"
         },
         {
+          name: "",
+          title: "PRICES"
+        },
+        {
           name: "contacts",
           title: "CONTACTS"
         }
@@ -40,6 +44,4 @@ export default {
   <router-view></router-view>
 </template>
 
-<style>
-
-</style>
+<style></style>
