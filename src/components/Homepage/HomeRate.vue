@@ -49,6 +49,7 @@ export default {
 
             background: rgb(122, 188, 100);
             background: linear-gradient(180deg, rgba(122, 188, 100, 1) 2%, rgba(255, 255, 255, 1) 3%);
+            
             min-height: 400px;
             min-width: 350px;
 
