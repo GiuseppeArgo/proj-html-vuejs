@@ -5,7 +5,8 @@ import AboutFaq from '../components/AboutFaq.vue';
 import AppFooter from '../components/AppFooter.vue';
 import AppNewsletter from "../components/AppNewsletter.vue";
 import AppCarousel from "../components/AppCarousel.vue";
-import HomePhone from "../components/HomePhone.vue";
+import HomePhone from "../components/Homepage/HomePhone.vue";
+
 export default {
     components: {
         AboutCard,

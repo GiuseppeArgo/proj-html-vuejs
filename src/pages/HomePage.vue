@@ -6,7 +6,7 @@ import HomePhone from "../components/Homepage/HomePhone.vue";
 import HomeCourse from "../components/Homepage/HomeCourse.vue";
 import HomeRate from "../components/Homepage/HomeRate.vue";
 import HomeInstructor from "../components/Homepage/HomeInstructor.vue";
-import AppCarousel from "../components/Homepage/AppCarousel.vue";
+import AppCarousel from "../components/AppCarousel.vue";
 import AppNewsletter from "../components/AppNewsletter.vue";
 
 export default {
