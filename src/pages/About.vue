@@ -2,8 +2,6 @@
 import { store } from "../store.js";
 import AboutCard from '../components/AboutCard.vue';
 import AboutFaq from '../components/AboutFaq.vue';
-import AppFooter from '../components/AppFooter.vue';
-import AppNewsletter from "../components/AppNewsletter.vue";
 import AppCarousel from "../components/AppCarousel.vue";
 import HomePhone from "../components/Homepage/HomePhone.vue";
 
@@ -11,8 +9,6 @@ export default {
     components: {
         AboutCard,
         AboutFaq,
-        AppFooter,
-        AppNewsletter,
         AppCarousel,
         HomePhone,
     },
@@ -100,8 +96,6 @@ export default {
     </section>
     <HomePhone />
     <AppCarousel />
-    <AppNewsletter />
-    <AppFooter />
 </template>
 
 <style lang="scss" scoped>
