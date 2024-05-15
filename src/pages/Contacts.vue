@@ -1,7 +1,11 @@
 <script>
+import AppCarousel from '../components/AppCarousel.vue';
+
 
 export default {
-
+    components: {
+    AppCarousel
+  },
 }
 </script>
 
@@ -36,12 +40,57 @@ export default {
                     <p class="ms_email">info@your-domain.com</p>
                     <p>24/7/365</p>
                 </div>
+                
                 <div class="col-8 ms_quick-contact">
-
+                    <div class="container">
+                        <h4>Quick Contact</h4>
+                        <form action="#">
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <label for="name">Your Name*</label>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                                <div class="col-6">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <label for="telephone">Telephone</label>
+                                    <input type="tel" id="telephone" name="telephone">
+                                </div>
+                                <div class="col-6">
+                                    <label for="location">Location</label>
+                                    <input type="text" id="location" name="location">
+                                </div>
+                                <div>
+                                    <label for="service">Service*</label>
+                                    <select id="service" name="service">
+                                        <option value="standard-tuition">Standard Tuition</option>
+                                        <option value="standard-tuition">Nigth Driving</option>
+                                        <option value="standard-tuition">Automatic</option>
+                                        <option value="standard-tuition">Pass Plus</option>
+                                        <option value="standard-tuition">Intensive Course</option>
+                                        <option value="standard-tuition">Private Lesson With Loris</option>
+                                        <option value="standard-tuition">Refresher Course</option>
+                                        <option value="standard-tuition">Cab Driver Training</option>
+                                        <option value="standard-tuition">Heavy Vehicule Training</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message">Message*</label>
+                                    <textarea id="message" name="message"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <button>SEND</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <AppCarousel class="carousel"/>
 </template>
 
 <style lang="scss" scoped>
@@ -91,13 +140,12 @@ export default {
     justify-content: center;
 
     .ms_contact-form {
-        height: 600px;
+        height: 680px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px -5px 0px $secondary-dark;
+        box-shadow: 0px -5px 0px $primary-grey;
         min-width: 100%;
-        border: 1px solid black;
         border-radius: 5px;
         position: relative;
         top: -30px;
@@ -108,6 +156,7 @@ export default {
             background-color: $primary-color;
             height: 100%;
             padding: 50px;
+            border-bottom-left-radius: 5px;
 
             h4 {
                 font-size: 2rem;
@@ -139,52 +188,72 @@ export default {
         .ms_quick-contact {
             height: 100%;
             background-color: $primary-color;
-            border: 1px solid black;
+            border-bottom-right-radius: 5px;
 
-            h2 {
-                margin-bottom: 20px;
+            h4 {
+                font-size: 2rem;
+                padding: 40px 0 10px 40px;
+                margin-top: 10px;
+                color: $secondary-dark;
             }
         }
 
         .form-group {
-            margin-bottom: 15px;
+            padding: 10px 40px;
 
             label {
                 display: block;
                 margin-bottom: 5px;
-                color: #555;
+                margin-top: 10px;
+                color: $text-color;
+                
             }
 
             input {
-                padding: 8px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
-
-            select,
-            textarea {
+                padding: 13px;
+                border: 1px solid $form-border;
+                border-radius: 5px;
                 width: 100%;
-                padding: 8px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
+                background-color: $form-color;
             }
 
-            textarea {
-                height: 100px;
-            }
+            
         }
-
+        
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid $form-border;
+            background-color: $form-color;
+            border-radius: 5px;
+            color: $text-color;
+        }
+        
+        textarea {
+            height: 100px;
+        }
+        
         button {
-            background-color: #4caf50;
-            color: #ffffff;
+            background-color: $text-green;
+            color: $primary-color;
             padding: 10px 30px;
             border: none;
             border-radius: 30px;
+            margin-top: 20px;
+            margin-left: 40px;
 
             &:hover {
                 background-color: #45a049;
             }
         }
     }
+}
+
+// /contact
+
+.carousel {
+    padding-top: 400px;
+    height: 1100px;
 }
 </style>
