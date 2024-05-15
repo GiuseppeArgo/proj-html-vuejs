@@ -52,11 +52,17 @@ export default {
 .menu-bar {
     background-color: rgb(51, 51, 51, 0.5);
 
-    a {
+    li {
         color: $primary-color;
         text-decoration: none;
         padding: 7px 15px;
         font-weight: bolder;
+        font-size: 1rem;
+
+        &:hover {
+            text-decoration: underline 3px solid;
+            color: $text-green;
+        }
 
     }
 
@@ -82,6 +88,8 @@ li:last-child {
 
     &:hover {
         background-color: #64a64e;
+        color: white;
+        text-decoration: none;
     }
 }
 

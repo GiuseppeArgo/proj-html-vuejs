@@ -63,7 +63,7 @@ export default {
                 cursus.</p>
             <img src="../assets/img/labels.png" alt="Labels" />
         </div>
-        <div>
+        <div class="hero-mike">
             <img src="../assets/img/about-page-mike-intro-fade.png" alt="Mike" />
         </div>
     </section>
@@ -100,6 +100,11 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.hero-mike {
+    position: relative;
+    top: -45px;
+}
 
 .my-container-text {
     width: 60%;

@@ -18,9 +18,9 @@ export default {
 </script>
 <template>
     <section class="my-box p-3">
-        <div class="d-flex flex-nowrap">
-            <i class="fa-solid fa-plus m-2" @click="showFaq" v-show="!isActive"></i> <i class="fa-solid fa-minus m-2"
-                @click="showFaq" v-show="isActive"></i>
+        <div class="d-flex flex-nowrap" @click="showFaq">
+            <i class="fa-solid fa-plus m-2" v-show="!isActive"></i> <i class="fa-solid fa-minus m-2" @click="showFaq"
+                v-show="isActive"></i>
             <h6 class="m-2">{{ faqQuestion }}</h6>
         </div>
         <div v-show="isActive">
