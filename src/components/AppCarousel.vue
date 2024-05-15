@@ -49,7 +49,7 @@
 </script>
 
 <template>
-    <div :style="{ height: divHeight + 'px' }" class="d-flex ms_div-img">
+    <div class="d-flex ms_div-img">
         <div class="ms_carousel-container">
             <h2>Testimonials</h2>
             <p>Here’s what our happy drivers had to say about our services:</p>

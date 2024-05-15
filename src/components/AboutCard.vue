@@ -49,7 +49,6 @@ export default {
 h5 {
     color: black;
     font-size: 2rem;
-
 }
 
 h6 {
