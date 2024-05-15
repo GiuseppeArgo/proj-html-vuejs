@@ -28,7 +28,13 @@ export default {
         <div class="container">
             <div class="row ms_contact-form">
                 <div class="col-4 ms_contact-info">
-
+                    <h4>Give us a call</h4>
+                    <p class="ms_phone-number">1-800-555-555</p>
+                    <p>MONDAY-SATURDAY (8AM - 8PM)</p>
+                    <hr class="border-4">
+                    <h4>Send us an email</h4>
+                    <p class="ms_email">info@your-domain.com</p>
+                    <p>24/7/365</p>
                 </div>
                 <div class="col-8 ms_quick-contact">
 
@@ -85,46 +91,46 @@ export default {
     justify-content: center;
 
     .ms_contact-form {
-        width: 1200px;
         height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 0px -5px 0px $secondary-dark;
+        min-width: 100%;
         border: 1px solid black;
         border-radius: 5px;
-        position: absolute;
-        top: 670px;
-
-        .ms_col {
-            display: flex;
-            background-color: #ffffff;
-            overflow: hidden;
-        }
+        position: relative;
+        top: -30px;
+        left: 0;
 
         .ms_contact-info {
             padding: 40px;
             background-color: $primary-color;
             height: 100%;
+            padding: 50px;
 
-            h2 {
-                color: #4caf50;
-                margin-bottom: 10px;
+            h4 {
+                font-size: 2rem;
+                color: $secondary-dark;
             }
 
             p {
                 margin: 5px 0;
+                font-weight: 500;
+                color: $text-color;
             }
 
-            .phone-number {
+            .ms_phone-number {
                 font-size: 2.5rem;
-                color: #4caf50;
+                font-weight: 500;
+                color: $text-green;
                 margin: 10px 0;
             }
 
-            .email {
-                font-size: 16px;
-                color: #4caf50;
+            .ms_email {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: $text-green;
                 margin: 10px 0;
             }
         }
@@ -178,11 +184,6 @@ export default {
             &:hover {
                 background-color: #45a049;
             }
-        }
-
-        .ms_half {
-            width: 50%;
-            display: inline;
         }
     }
 }
