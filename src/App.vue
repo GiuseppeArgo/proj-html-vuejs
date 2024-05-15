@@ -2,12 +2,14 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from './components/AppFooter.vue';
 import AppNewsletter from "./components/AppNewsletter.vue";
+import AppCarousel from "./components/AppCarousel.vue";
 
 export default {
   components: {
     AppHeader,
     AppFooter,
-    AppNewsletter
+    AppNewsletter,
+    AppCarousel
   },
   data() {
     return {
@@ -36,8 +38,6 @@ export default {
     <AppHeader :menu="menu" />
   </div>
   <router-view></router-view>
-  <AppNewsletter />
-  <AppFooter />
 </template>
 
 <style>
