@@ -18,7 +18,33 @@ export default {
     },
     data() {
         return {
-            team: store.team
+            team: store.team,
+            faqs: [
+                {
+                    question: "High Rate of Success",
+                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+                },
+                {
+                    question: "Zero Accident Rate",
+                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+                },
+                {
+                    question: "We're Never Late",
+                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+                },
+                {
+                    question: "Price Promise",
+                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+                },
+                {
+                    question: "True Professionals",
+                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+                },
+                {
+                    question: "We Work Around You",
+                    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.",
+                },
+            ],
         };
     }
 }

@@ -63,6 +63,25 @@ export default {
     .router-link-active {
         color: $text-green;
         text-decoration: underline 3px solid;
+
+    }
+
+}
+
+li:last-child {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: #7abc64;
+    color: white;
+    font-size: 1rem;
+
+    .router-link-active {
+        color: white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: #64a64e;
     }
 }
 
