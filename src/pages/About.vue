@@ -1,10 +1,19 @@
 <script>
 import { store } from "../store.js";
 import AboutCard from '../components/AboutCard.vue';
-
+import AboutFaq from '../components/AboutFaq.vue';
+import AppFooter from '../components/AppFooter.vue';
+import AppNewsletter from "../components/AppNewsletter.vue";
+import AppCarousel from "../components/AppCarousel.vue";
+import HomePhone from "../components/HomePhone.vue";
 export default {
     components: {
         AboutCard,
+        AboutFaq,
+        AppFooter,
+        AppNewsletter,
+        AppCarousel,
+        HomePhone,
     },
     data() {
         return {
@@ -38,7 +47,7 @@ export default {
     <section class="ourteam">
         <div class="d-flex container flex-column align-items-center">
             <h2 class="m-5 fw-bold text-center">Our Team</h2>
-            <p class="m-3 fs-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            <p class="m-3 fs-4 text-center my-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
 
 
@@ -48,10 +57,32 @@ export default {
             </div>
         </div>
     </section>
+    <section class="faq">
+        <div class="d-flex container flex-column align-items-center">
+            <h2 class="m-5 fw-bold text-center">Our Promise</h2>
+            <p class="m-3 fs-4 text-center my-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nunc
+                ultrices
+                auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+        </div>
+        <div class="d-flex container flex-wrap p-5">
+            <div class="col-6 p-2" v-for="item in faqs">
+                <AboutFaq :faqQuestion="item.question" :faqAnswer="item.answer" />
+            </div>
+        </div>
+    </section>
+    <HomePhone />
+    <AppCarousel />
+    <AppNewsletter />
+    <AppFooter />
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.my-container-text {
+    width: 60%;
+}
 
 .my-title {
 
@@ -82,6 +113,12 @@ img {
 
 .ourteam {
     background-color: #F1F5F7;
+
+}
+
+.faq {
+    background-image: url(../assets/img/faq.jpg);
+    background-size: cover;
 
 }
 </style>
