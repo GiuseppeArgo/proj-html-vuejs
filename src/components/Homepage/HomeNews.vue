@@ -51,7 +51,9 @@ export default {
 
                         </div>
                     </div>
-                    <div class="triangle"></div>
+                    <div class="triangle">
+                        <a class="btn ms_btn">MORE FROM THE BLOG</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,6 +181,29 @@ export default {
             background-repeat: no-repeat;
             min-width: 1000px;
             min-height: 105px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ms_btn {
+                position: relative;
+                top: -50px;
+                left: 0;
+                height: 40px;
+                width: 200px;
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: $primary-color;
+                background-color: $text-green;
+
+                // border: 1px solid green;
+                border-radius: 10% / 50%;
+
+                &:hover {
+                    background-color: $button-hover;
+                }
+            }
         }
 
     }

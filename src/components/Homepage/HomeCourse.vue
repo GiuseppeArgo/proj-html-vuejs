@@ -143,6 +143,9 @@ export default {
 
                     // border: 1px solid green;
                     border-radius: 10% / 50%;
+                    &:hover {
+                        background-color: $button-hover;
+                    }
 
                 }
             }

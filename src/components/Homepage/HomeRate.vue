@@ -51,7 +51,6 @@ export default {
 
 
 .rate {
-
     // border: 2px solid black;
     .col-4 {
         display: flex;

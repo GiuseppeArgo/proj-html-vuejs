@@ -29,7 +29,7 @@ export default {
                 </div>
                 <div class="col-4">
                     <div class="wrapper">
-                        <a class="btn ms_btn">MORE ABOUT US</a>
+                        <router-link to="about" class="btn ms_btn">MORE ABOUT US</router-link>
                     </div>
 
                 </div>
@@ -70,7 +70,7 @@ export default {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+
     .section_title {
         h2 {
             color: $secondary-dark;
@@ -90,7 +90,7 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             min-height: 100%;
             min-width: 100%;
 
@@ -99,7 +99,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 margin-top: 30px;
-                
+
                 height: 50px;
                 width: 80%;
                 font-size: 0.9rem;
@@ -109,6 +109,11 @@ export default {
 
                 // border: 1px solid green;
                 border-radius: 10% / 50%;
+
+                &:hover {
+                    background-color: $button-hover;
+                }
+
             }
         }
     }
