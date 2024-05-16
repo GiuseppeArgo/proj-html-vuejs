@@ -223,6 +223,7 @@ export default {
                 border-radius: 5px;
                 width: 100%;
                 background-color: $form-color;
+                color: $text-color;
             }
 
             
