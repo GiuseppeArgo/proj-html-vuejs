@@ -1,10 +1,12 @@
 <script>
 import AppCarousel from '../components/AppCarousel.vue';
+import HomeRate from '../components/Homepage/HomeRate.vue';
 import { store } from "../store.js";
 
 export default {
     components: {
-        AppCarousel
+        AppCarousel,
+        HomeRate,
     },
     data() {
         return {
@@ -95,6 +97,7 @@ export default {
             </div>
         </div>
     </section>
+    <HomeRate class="card"/>
     <AppCarousel class="carousel"/>
 </template>
 
@@ -257,8 +260,26 @@ export default {
 
 // /contact
 
+// carousel
+
 .carousel {
     padding-top: 400px;
     height: 1100px;
+}
+
+// /carousel
+
+// card 
+
+.card {
+    max-width: 1200px;
+    min-width: 1200px;
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+    top: 1550px;
+    left: calc((100vw / 2) - 600px);
+    right: calc((100vw / 2) - 600px);
+    border: none;
 }
 </style>

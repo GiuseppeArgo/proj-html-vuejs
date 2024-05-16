@@ -128,7 +128,7 @@ export default {
 
                 p {
                     margin: 30px 0;
-                    line-height: 30px;
+                    line-height: 35px;
                 }
 
                 .ms_about {
@@ -162,7 +162,13 @@ export default {
                     display: block;
                     margin: 30px 0;
                 }
-
+                
+                .logo {
+                    position: relative;
+                    top: -10px;
+                    left: 0;
+                    margin-bottom: 10px;
+                }
 
             }
 
