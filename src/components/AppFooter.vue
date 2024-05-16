@@ -1,27 +1,10 @@
 <script>
 export default {
-    data () {
-        return {
-            courses: [
-                {
-                    icon: "fa-circle-right",
-                    listItem: "Basic Driving Course"
-                },
-                {
-                    icon: "fa-circle-right",
-                    listItem: "Pass Plus Driving Course"
-                },
-                {
-                    icon: "fa-circle-right",
-                    listItem: "Intensive Driving Course"
-                },
-                {
-                    icon: "fa-circle-right",
-                    listItem: "Instructors Training"
-                }
-            ],
+    props: {
+        courses: {
+            type: Array
         }
-    }
+    },
 }
 </script>
 
@@ -93,7 +76,7 @@ export default {
         min-height: 500px;
         justify-content: center;
         font-size: 1.1rem;
-        color: #7799ad;
+        color: $text-color;
         
         .ms_container {
             width: 80%;
@@ -110,13 +93,13 @@ export default {
                 margin-top: 20px;
 
                 i {
-                    color: white;
+                    color: $primary-color;
                     margin-right: 10px;
                     font-size: .9rem;
                 }
 
                 .green_icon {
-                color: #7abc64;
+                color: $text-green;
                 font-size: 0.9rem;
                 margin-right: 5px;
                 }
@@ -127,13 +110,13 @@ export default {
                 
                 a {
                 text-decoration: none;
-                color: #7799ad;
+                color: $text-color;
 
                     &:hover {
-                        color: #7abc64;
+                        color: $text-green;
 
                         .green_icon{
-                            color: white;
+                            color: $primary-color;
                         }
                     }
                 }
@@ -150,26 +133,26 @@ export default {
 
                 .ms_about {
                     padding: 10px 15px;
-                    border: 3px solid #929aa3;
+                    border: 3px solid $primary-grey;
                     border-radius: 50px;
-                    color: #929aa3;
+                    color: $primary-grey;
                     font-size: 1rem;
 
                     &:hover {
-                        border-color: #7abc64;
-                        color: #7abc64;
+                        border-color: $text-green;
+                        color: $text-green;
                     }
                 }
 
                 .ms_book {
                     padding: 10px 25px;
                     border-radius: 50px;
-                    background-color: #7abc64;
-                    color: white;
+                    background-color: $text-green;
+                    color: $primary-color;
                     font-size: 1rem;
 
                     &:hover {
-                        background-color: #64a64e;
+                        background-color: $button-hover;
                     }
                     
                 }
@@ -184,13 +167,13 @@ export default {
             }
 
             h3 {
-                color: white;
+                color: $primary-color;
             }
         }
         
 
         .ms_lower-footer {
-            background-color: #333333;
+            background-color: $footer-bg;
             width: 100%;
             height: 120px;
 
@@ -199,7 +182,7 @@ export default {
                 margin-left: 30px;
 
                 span {
-                    color: #64a64e;
+                    color: $text-green;
                 }
             }
 

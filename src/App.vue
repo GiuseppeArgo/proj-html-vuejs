@@ -25,7 +25,26 @@ export default {
           name: "contacts",
           title: "BOOK NOW"
         }
-      ]
+      ],
+      
+      courses: [
+        {
+          icon: "fa-circle-right",
+          listItem: "Basic Driving Course"
+        },
+        {
+          icon: "fa-circle-right",
+          listItem: "Pass Plus Driving Course"
+        },
+        {
+          icon: "fa-circle-right",
+          listItem: "Intensive Driving Course"
+        },
+        {
+          icon: "fa-circle-right",
+          listItem: "Instructors Training"
+        }
+      ],
     }
   }
 }
@@ -37,7 +56,7 @@ export default {
   </div>
   <router-view></router-view>
   <AppNewsletter />
-  <AppFooter />
+  <AppFooter :courses="courses" />
 </template>
 
 <style></style>

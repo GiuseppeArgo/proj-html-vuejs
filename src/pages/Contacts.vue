@@ -1,11 +1,16 @@
 <script>
 import AppCarousel from '../components/AppCarousel.vue';
-
+import { store } from "../store.js";
 
 export default {
     components: {
-    AppCarousel
-  },
+        AppCarousel
+    },
+    data() {
+        return {
+            store,
+        }
+    }
 }
 </script>
 

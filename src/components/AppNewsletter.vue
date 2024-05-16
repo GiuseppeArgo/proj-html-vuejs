@@ -30,13 +30,13 @@
                 margin: 40px;
                 font-size: 2rem;
                 font-weight: 500;
-                color: #494c4e;
+                color: $secondary-dark;
             }
     
             input {
                 width: 100%;
                 border-radius: 10px;
-                border: 1px solid lightgray;
+                border: 1px solid $form-border;
                 padding: 15px 10px;
                 color: $text-color;
             }
@@ -46,12 +46,12 @@
                 margin-top: 30px;
                 padding: 10px 0;
                 border-radius: 50px;
-                color: white;
+                color: $primary-color;
                 border: none;
                 background-color: $text-green;
     
                 &:hover {
-                            background-color: #64a64e;
+                            background-color: $button-hover;
                         }
             }
 
