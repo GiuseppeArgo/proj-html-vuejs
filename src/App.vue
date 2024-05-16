@@ -19,14 +19,31 @@ export default {
         },
         {
           name: "about",
-          title: "ABOUT US"
+          title: "ABOUT"
+        },
+        {
+          name: "",
+          title: "PRICES"
+        },
+        {
+          name: "",
+          title: "COURSES"
+        },
+        {
+          name: "",
+          title: "LOCATIONS"
+        },
+        {
+          name: "",
+          title: "BLOG"
         },
         {
           name: "contacts",
           title: "BOOK NOW"
-        }
+        },
+
       ],
-      
+
       courses: [
         {
           icon: "fa-circle-right",

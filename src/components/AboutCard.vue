@@ -10,7 +10,7 @@ export default {
     methods: {
         getImageFlag(imageName) {
 
-            return new URL(`../assets/img/${imageName}`, import.meta.url).href;
+            return new URL(imageName, import.meta.url).href;
 
         },
     },
@@ -47,12 +47,12 @@ export default {
 @use "../style/partials/variables" as *;
 
 h5 {
-    color: black;
+    color: $secondary-dark;
     font-size: 2rem;
 }
 
 h6 {
-    color: black;
+    color: $secondary-dark;
 }
 
 i {
@@ -60,12 +60,12 @@ i {
 }
 
 .my-img {
-    width: 60%;
+    width: 65%;
     transition: .3s ease-in-out;
 }
 
 .my-img:hover {
-    width: 65%;
+    width: 75%;
 }
 
 .my-card {

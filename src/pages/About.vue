@@ -61,10 +61,12 @@ export default {
 
             <p class="pt-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id
                 cursus.</p>
-            <img src="../assets/img/labels.png" alt="Labels" />
+            <img src="https://avada.website/driving/wp-content/uploads/sites/114/2019/02/labels-600x131.png"
+                alt="Labels" />
         </div>
         <div class="hero-mike">
-            <img src="../assets/img/about-page-mike-intro-fade.png" alt="Mike" />
+            <img src="https://avada.website/driving/wp-content/uploads/sites/114/2019/03/about-page-mike-intro-fade-1200x1460.png"
+                alt="Mike" />
         </div>
     </section>
     <section class="ourteam">
@@ -112,7 +114,7 @@ export default {
 
 .my-title {
 
-    background-image: url(../assets/img/default-ptb-retina.jpg);
+    background-image: url(https://avada.website/driving/wp-content/uploads/sites/114/2019/01/default-ptb-retina.jpg);
     background-size: cover;
     height: 300px;
     color: $primary-color;
@@ -122,15 +124,20 @@ export default {
     position: absolute;
     top: 225px;
     font-size: 3rem;
+    color: $primary-color;
+
 }
 
+h2 {
+    color: $secondary-dark;
+}
 
 h4 {
-    color: #A6B8C2;
+    color: $text-color;
 }
 
 p {
-    color: #A6B8C2;
+    color: $text-color;
 }
 
 img {
@@ -139,7 +146,6 @@ img {
 
 .ourteam {
     background-color: #F1F5F7;
-
 }
 
 .faq {
