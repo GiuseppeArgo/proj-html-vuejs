@@ -51,10 +51,6 @@ export default {
 
 
 .rate {
-    min-height: 200px;
-    background-image: url(../../assets/img/triangolo.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
 
     // border: 2px solid black;
     .col-4 {

@@ -53,7 +53,7 @@ export default {
     <!-- /COURSE SECTION -->
 
     <!-- RATE SECTION -->
-    <HomeRate />
+    <HomeRate class="ms_back"/>
     <!-- /RATE SECTION -->
 
     <!-- INSTRUCTORS SECTION -->
@@ -73,5 +73,10 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
-
+.ms_back {
+    min-height: 200px;
+    background-image: url(../assets/img/triangolo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 </style>
